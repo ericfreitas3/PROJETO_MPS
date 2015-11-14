@@ -11,6 +11,7 @@ public class TesteMemento {
 		HistoricoMemento historico = new HistoricoMemento();
 		
 		criador.setEstado("Estado 1");
+		historico.add(criador.saveEstadoMemento());
 		criador.setEstado("Estado 2");
 		historico.add(criador.saveEstadoMemento());
 		
